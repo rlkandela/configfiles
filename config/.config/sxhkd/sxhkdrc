@@ -122,5 +122,8 @@ super + {Left,Down,Up,Right}
 
 
 # user defined
+#super + @space
+    #tdrop -ma -w -4 -y "$PANEL_HEIGHT" -s dropdown st
+
 super + @space
-    tdrop -ma -w -4 -y "$PANEL_HEIGHT" -s dropdown st
+	tdrop -ma -w -12 -y "$PANEL_HEIGHT" st
