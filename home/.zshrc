@@ -17,6 +17,10 @@ export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 fpath=($fpath "/home/rlkandela/.zfunctions")
 
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
+
+# Add .local/bin to the path
+export PATH="$PATH:/home/rlkandela/.local/bin"
+
