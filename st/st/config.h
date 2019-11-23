@@ -10,11 +10,11 @@ static char *font = "Source Code Pro:pixelsize=16:antialias=true:autohint=true";
 static char *font2[] = {
 	"Inconsolata:pixelsize=17:antialias=true:autohint=true",
 	"mono:pixelsize=17:antialias=true:autohint=true",
-	"Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true", 
-	"Hack Nerd Font Mono:pixelsize=15:antialias=true:autohint=true", 
+	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true",
+	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true",
 	"Font Awesome 5 Brands:pixelsize=15",
 	"Font Awesome 5 Free Solid:pixelsize=15",
-	"Font Awesome 5 Free:pixelsize=15"
+	"Font Awesome 5 Free:pixelsize=15",
 };
 
 static int borderpx = 2;
@@ -198,6 +198,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+	{ ShiftMask,			XK_Page_Up,		kscrollup,		{.i = -1} },
+	{ ShiftMask,			XK_Page_Down,	kscrolldown,	{.i = -1} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 };
