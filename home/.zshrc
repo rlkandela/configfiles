@@ -24,3 +24,13 @@ prompt spaceship
 # Add .local/bin to the path
 export PATH="$PATH:/home/rlkandela/.local/bin"
 
+# rustcd
+autoload bashcompinit
+bashcompinit
+export RUST_PROJECTS_DIRECTORY=/home/rlkandela/Documents/Rust/
+rustcd(){
+	cd $(/usr/bin/exec_rustcd.py "$1")
+}
+eval "$(register-python-argcomplete rustcd)"
+export PATH="$PATH:/home/rlkandela/.cargo/bin"
+# end rustcd
