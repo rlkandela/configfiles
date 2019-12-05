@@ -34,3 +34,20 @@ rustcd(){
 eval "$(register-python-argcomplete rustcd)"
 export PATH="$PATH:/home/rlkandela/.cargo/bin"
 # end rustcd
+
+# Set hibernation alias
+hibernate(){
+	systemctl hibernate
+}
+#alias hibernate="sudo pm-hiberate"
+# End hibernation alias
+
+# Set LaTeX
+export PATH="$PATH:/opt/texlive/2019/bin/x86_64-linux"
+export MANPATH="$PATH:/opt/texlive/2019/texmf-dist/doc/man"
+export INFOPATH"=$PATH:/opt/texlive/2019/texmf-dist/doc/info"
+# End LaTeX
+
+# Start Matlab
+#export PATH="/usr/local/MATLAB/R2018b/bin:$PATH"
+# End Matlab
