@@ -71,8 +71,12 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+#super + {grave,Tab}
+	#bspc {node,desktop} -f last
+
+# cycle throw windows in local desktop
+super + {_, shift} + Tab
+	bspc node -f {next, prev}.local
 
 # focus the older or newer node in the focus history
 super + {o,i}
@@ -127,3 +131,8 @@ super + {Left,Down,Up,Right}
 
 super + @space
 	tdrop -ma -w -12 -y "$PANEL_HEIGHT" st
+
+super + shift + z
+	 xinput --disable "DELL08A6:00 06CB:7E92 Touchpad"; \
+	 slock; \
+	  xinput --enable "DELL08A6:00 06CB:7E92 Touchpad"
