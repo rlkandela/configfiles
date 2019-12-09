@@ -133,6 +133,10 @@ super + @space
 	tdrop -ma -w -12 -y "$PANEL_HEIGHT" st
 
 super + shift + z
-	 xinput --disable "DELL08A6:00 06CB:7E92 Touchpad"; \
-	 slock; \
-	  xinput --enable "DELL08A6:00 06CB:7E92 Touchpad"
+	xinput --disable "DELL08A6:00 06CB:7E92 Touchpad"; \
+	slock; \
+	xinput --enable "DELL08A6:00 06CB:7E92 Touchpad"
+
+super + ctrl + o
+	/home/rlkandela/.repoconf/config/.config/sxhkd/dmenu_scripts.sh
+	#ls -l /home/rlkandela/.scripts/ | grep sh | awk '{print $9}' | dmenu -l 30 | awk '{printf "/home/rlkandela/.scripts/%s",$1}' | sh

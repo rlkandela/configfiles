@@ -16,3 +16,4 @@ setxkbmap es
 xinput --enable "DELL08A6:00 06CB:7E92 Touchpad"
 sxhkd &
 exec bspwm
+#exec i3-gaps
