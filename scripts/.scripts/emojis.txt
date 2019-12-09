@@ -1,0 +1,437 @@
+😀 face | grin | grinning face
+😃 face | grinning face with big eyes | mouth | open | smile
+😄 eye | face | grinning face with smiling eyes | mouth | open | smile
+😁 eyes | eye | face | grin | smile
+😆 face | grinning squinting face | laugh | mouth | satisfied | smile
+😅 cold | face | grinning face with sweat | open | smile | sweat
+😂 face | face with tears of joy | joy | laugh | tear
+🙃 face | upside-down
+😉 face | wink | winking face
+😊 blush | eye | face | smile | smiling face with smiling eyes
+😇 angel | face | fantasy | halo | innocent | smiling face with halo
+😍 eye | face | love | smile | smiling face with heart-eyes
+😘 face | face blowing a kiss | kiss
+😗 face | kiss | kissing face
+☺ face | outlined | relaxed | smile | smiling face
+😚 closed | eye | face | kiss | kissing face with closed eyes
+😙 eye | face | kiss | kissing face with smiling eyes | smile
+😋 delicious | face | face savoring food | savouring | smile | yum
+😛 face | face with tongue | tongue
+😜 eye | face | joke | tongue | wink | winking face with tongue
+😝 eye | face | horrible | squinting face with tongue | taste | tongue
+😐 deadpan | face | meh | neutral
+😑 expressionless | face | inexpressive | meh | unexpressive
+😶 face | face without mouth | mouth | quiet | silent
+😏 face | smirk | smirking face
+😒 face | unamused | unhappy
+😌 face | relieved
+😔 dejected | face | pensive
+😪 face | sleep | sleepy face
+😴 face | sleep | sleeping face | zzz
+😷 cold | doctor | face | face with medical mask | mask | sick
+😵 dizzy | face
+😎 bright | cool | face | smiling face with sunglasses | sun | sunglasses
+😕 confused | face | meh
+😟 face | worried
+☹ face | frown | frowning face
+😮 face | face with open mouth | mouth | open | sympathy
+😯 face | hushed | stunned | surprised
+😲 astonished | face | shocked | totally
+😳 dazed | face | flushed
+😦 face | frown | frowning face with open mouth | mouth | open
+😧 anguished | face
+😨 face | fear | fearful | scared
+😰 sweat | blue | cold | face | rushed | sweat
+😥 disappointed | face | relieved | sad but relieved face | whew
+😢 cry | crying face | face | sad | tear
+😭 cry | face | loudly crying face | sad | sob | tear
+😱 face | face screaming in fear | fear | munch | scared | scream
+😖 confounded | face
+😣 face | persevere | persevering face
+😞 disappointed | face
+😓 cold | downcast face with sweat | face | sweat
+😩 face | tired | weary
+😫 face | tired
+😡 angry | face | mad | pouting | rage | red
+😠 angry | face | mad
+😈 face | fairy tale | fantasy | horns | smile | smiling face with horns
+☠ crossbones | death | face | monster | skull | skull and crossbones
+💩 dung | face | monster | pile of poo | poo | poop
+👽 alien | creature | extraterrestrial | face | fantasy | ufo
+🤖 face | monster | robot
+😺 cat | face | grinning | mouth | open | smile
+😸 cat | eye | face | grin | grinning cat with smiling eyes | smile
+😹 cat | cat with tears of joy | face | joy | tear
+😻 cat | eye | face | heart | love | smile | smiling cat with heart-eyes
+😼 cat | cat with wry smile | face | ironic | smile | wry
+😽 cat | eye | face | kiss | kissing cat
+🙀 cat | face | oh | surprised | weary
+😿 cat | cry | crying cat | face | sad | tear
+😾 cat | face | pouting
+❣ exclamation | heart exclamation | mark | punctuation
+❤ heart | red heart
+🕳 hole
+💣 bomb | comic
+🗨 dialog | left speech bubble | speech
+🗯 angry | balloon | bubble | mad | right anger bubble
+🖐 finger | hand | hand with fingers splayed | splayed
+✋ hand | raised hand
+👌 hand | OK
+✌ hand | v | victory
+👈 backhand | backhand index pointing left | finger | hand | index | point
+👉 backhand | backhand index pointing right | finger | hand | index | point
+👆 backhand | backhand index pointing up | finger | hand | point | up
+👇 backhand | backhand index pointing down | down | finger | hand | point
+☝ finger | hand | index | index pointing up | point | up
+👍 | hand | thumb | thumbs up | up
+👎 | down | hand | thumb | thumbs down
+✊ clenched | fist | hand | punch | raised fist
+✍ hand | write | writing hand
+👂 body | ear
+👁 body | eye
+🕵 detective | sleuth | spy
+🕴 business | man | man in suit levitating | suit
+⛷ ski | skier | snow
+🏂 ski | snow | snowboard | snowboarder
+🏌 ball | golf | person golfing
+🏄 surfing | surfing
+🏊 swimming | swim
+⛹ ball | person bouncing ball
+🏋 lifter | person lifting weights | weight
+👪 family
+🗣 face | head | silhouette | speak | speaking
+🐵 face | monkey
+🐕 dog | pet
+🐱 cat | face | pet
+🐈 cat | pet
+🐮 cow | face
+🐭 face | mouse
+🐿 chipmunk | squirrel
+🐦 bird
+🕊 bird | dove | fly | peace
+🐟 fish | Pisces | zodiac
+🕷 insect | spider
+🕸 spider | web
+🏵 plant | rosette
+☘ plant | shamrock
+🌶 hot | pepper
+☕ beverage | coffee | drink | hot | steaming | tea
+🍸 bar | cocktail | drink | glass
+🍽 cooking | fork | fork and knife with plate | knife | plate
+🌍 Africa | earth | Europe | globe | globe showing Europe-Africa | world
+🌎 Americas | earth | globe | globe showing Americas | world
+🌏 Asia | Australia | earth | globe | globe showing Asia-Australia | world
+🌐 earth | globe | globe with meridians | meridians | world
+🗺 map | world
+🏔 cold | mountain | snow | snow-capped mountain
+⛰ mountain
+🏕 camping
+🏖 beach | beach with umbrella | umbrella
+🏜 	desert
+🏝 desert | island
+🏞 park | park
+🏟 	stadium
+🏛 classical | classical building
+🏗 construction | construction
+🏘 	houses
+🏚 derelict | house
+🏠 home | house
+🏭 building | factory
+⛪ Christian | church | cross | religion
+⛩ religion | shinto | shrine
+⛲ fountain
+⛺ camping | tent
+🏙 city | cityscape
+♨ hot | hotsprings | springs | steaming
+🚇 metro | subway
+🚍 bus | oncoming
+🚑 ambulance | vehicle
+🚔 car | oncoming | police
+🚘 automobile | car | oncoming
+🏎 car | racing
+🏍 motorcycle | racing
+🚲 bicycle | bike
+🛣 highway | motorway | road
+🛤 railway | railway track | train
+🛢 drum | oil
+⛽ diesel | fuel | fuelpump | gas | pump | station
+⚓ anchor | ship | tool
+⛵ boat | resort | sailboat | sea | yacht
+🛳 passenger | ship
+⛴ boat | ferry | passenger
+🛥 boat | motor boat | motorboat
+✈ aeroplane | airplane
+🛩 aeroplane | airplane | small airplane
+🛰 satellite | space
+🛎 bell | bellhop | hotel
+⌛ done | sand | timer
+⏳ hourglass | hourglass not done | sand | timer
+⌚ clock | watch
+⏱ clock | stopwatch
+⏲ clock | timer
+🕰 clock | mantelpiece clock
+🕛 00 | 12 | 12:00 | clock | o’clock | twelve
+🕧 12 | 12:30 | clock | thirty | twelve | twelve-thirty
+🕐 00 | 1 | 1:00 | clock | o’clock | one
+🕜 1 | 1:30 | clock | one | one-thirty | thirty
+🕑 00 | 2 | 2:00 | clock | o’clock | two
+🕝 2 | 2:30 | clock | thirty | two | two-thirty
+🕒 00 | 3 | 3:00 | clock | o’clock | three
+🕞 3 | 3:30 | clock | thirty | three | three-thirty
+🕓 00 | 4 | 4:00 | clock | four | o’clock
+🕟 4 | 4:30 | clock | four | four-thirty | thirty
+🕔 00 | 5 | 5:00 | clock | five | o’clock
+🕠 5 | 5:30 | clock | five | five-thirty | thirty
+🕕 00 | 6 | 6:00 | clock | o’clock | six
+🕡 6 | 6:30 | clock | six | six-thirty | thirty
+🕖 00 | 7 | 7:00 | clock | o’clock | seven
+🕢 7 | 7:30 | clock | seven | seven-thirty | thirty
+🕗 00 | 8 | 8:00 | clock | eight | o’clock
+🕣 8 | 8:30 | clock | eight | eight-thirty | thirty
+🕘 00 | 9 | 9:00 | clock | nine | o’clock
+🕤 9 | 9:30 | clock | nine | nine-thirty | thirty
+🕙 00 | 10 | 10:00 | clock | o’clock | ten
+🕥 10 | 10:30 | clock | ten | ten-thirty | thirty
+🕚 00 | 11 | 11:00 | clock | eleven | o’clock
+🕦 11 | 11:30 | clock | eleven | eleven-thirty | thirty
+🌑 dark | moon | new moon
+🌒 crescent | moon | waxing
+🌓 moon | moon | quarter
+🌔 gibbous | moon | waxing
+🌕 full | moon
+🌖 gibbous | moon | waning
+🌗 moon | moon | quarter
+🌘 crescent | moon | waning
+🌜 face | last quarter moon face | moon | quarter
+🌡 thermometer | weather
+☀ bright | rays | sun | sunny
+⭐ star
+☁ cloud | weather
+⛅ cloud | sun | sun behind cloud
+⛈ cloud | cloud with lightning and rain | rain | thunder
+🌤 cloud | sun | sun behind small cloud
+🌥 cloud | sun | sun behind large cloud
+🌦 cloud | rain | sun | sun behind rain cloud
+🌧 cloud | cloud with rain | rain
+🌨 cloud | cloud with snow | cold | snow
+🌩 cloud | cloud with lightning | lightning
+🌪 cloud | tornado | whirlwind
+🌫 cloud | fog
+🌬 blow | cloud | face | wind
+☂ clothing | rain | umbrella
+☔ clothing | drop | rain | umbrella | umbrella with rain drops
+⛱ rain | sun | umbrella | umbrella on ground
+⚡ danger | electric | high voltage | lightning | voltage | zap
+❄ cold | snow | snowflake
+☃ cold | snow | snowman
+⛄ cold | snow | snowman | snowman without snow
+☄ comet | space
+✨ * | sparkle | sparkles | star
+🎗 celebration | reminder | ribbon
+🎟 admission | admission tickets | ticket
+🎖 celebration | medal | military
+🏆 prize | trophy
+⚽ ball | football | soccer
+⚾ ball | baseball
+⛳ hole | golf | hole
+⛸ ice | skate
+🎮 controller | game | video game
+🕹 game | joystick | video game
+♠ card | game | spade suit
+♥ card | game | heart suit
+♦ card | diamond suit | game
+♣ card | club suit | game
+♟ chess | chess pawn | dupe | expendable
+🃏 card | game | joker | wildcard
+🀄 game | mahjong | mahjong red dragon | red
+🎭 art | mask | performing | performing arts | theater | theatre
+🖼 art | frame | framed picture | museum | painting | picture
+👓 clothing | eye | eyeglasses | eyewear | glasses
+🕶 dark | eye | eyewear | glasses | sunglasses
+🛍 bag | hotel | shopping | shopping bags
+🎓 cap | celebration | clothing | graduation | hat
+⛑ aid | cross | face | hat | helmet | rescue worker’s helmet
+🔇 mute | muted speaker | quiet | silent | speaker
+🔈 soft | speaker low volume
+🔉 medium | speaker medium volume
+🔊 loud | speaker high volume
+🎵 music | musical note | note
+🎶 music | musical notes | note | notes
+🎙 mic | microphone | music | studio
+🎚 level | music | slider
+🎛 control | knobs | music
+🎧 earbud | headphone
+📻 radio | video
+☎ phone | telephone
+📟 pager
+💻 computer | laptop | pc | personal
+🖥 computer | desktop
+🖨 computer | printer
+⌨ computer | keyboard
+🖱 computer | computer mouse
+🖲 computer | trackball
+💿 cd | computer | disk | optical
+🎞 cinema | film | frames | movie
+📽 cinema | film | movie | projector | video
+🎬 clapper | clapper board | movie
+📺 television | tv | video
+📷 camera | video
+📹 camera | video
+🔍 glass | magnifying | magnifying glass tilted left | search | tool
+🕯 	candle | light
+📚 book | books
+🗞 	news | newspaper | paper | rolled | rolled-up newspaper
+🏷 	label
+💰 bag | dollar | money | moneybag
+💳 card | credit | money
+💹 chart | chart increasing with yen | graph | growth | money | yen
+✉ email | envelope | letter
+📤 box | letter | mail | outbox | sent | tray
+📥 box | inbox | letter | mail | receive | tray
+📦 box | package | parcel
+📫 closed | closed mailbox with raised flag | mail | mailbox | postbox
+📪 closed | closed mailbox with lowered flag | lowered | mail | mailbox | postbox
+📬 mail | mailbox | open | open mailbox with raised flag | postbox
+📭 lowered | mail | mailbox | open | open mailbox with lowered flag | postbox
+🗳 	ballot | ballot box with ballot | box
+✏ pencil
+✒ ib | nib | pen
+🖋 	fountain | pen
+🖊 	ballpoint | pen
+🖌 	paintbrush | painting
+🖍 crayon
+🗂 card | dividers | index
+🗒 note | pad | spiral | spiral notepad
+🗓 calendar | pad | spiral
+📈 chart | chart increasing | graph | growth | trend | upward
+📉 chart | chart decreasing | down | graph | trend
+📊 bar | chart | graph
+📋 clipboard
+🖇 link | linked paperclips | paperclip
+✂ cutting | scissors | tool
+🗃 box | card | file
+🗄 cabinet | file | filing
+🗑 wastebasket
+🔒 closed | locked
+🔓 lock | open | unlock | unlocked
+🗝 clue | key | lock | old
+⛏ mining | pick | tool
+⚒ hammer | hammer and pick | pick | tool
+🛠 hammer | hammer and wrench | spanner | tool | wrench
+🗡 dagger | knife | weapon
+⚔ crossed | swords | weapon
+🛡 shield | weapon
+⚙ cog | cogwheel | gear | tool
+🗜 clamp | compress | tool | vice
+⚖ balance | justice | Libra | scale | zodiac
+⛓ chain | chains
+⚗ alembic | chemistry | tool
+🛏 bed | hotel | sleep
+🛋 couch | couch and lamp | hotel | lamp
+⚰ coffin | death
+⚱ ashes | death | funeral | urn
+♿ access | wheelchair symbol
+🚹 lavatory | man | men’s room | restroom | wc
+🚺 lavatory | restroom | wc | woman | women’s room
+🚼 baby | baby symbol | changing
+⚠ warning
+⛔ entry | forbidden | no | not | prohibited | traffic
+🚭 forbidden | no | not | prohibited | smoking
+☢ radioactive | sign
+☣ biohazard | sign
+⬆ arrow | cardinal | direction | north | up arrow
+↗ arrow | direction | intercardinal | northeast | up-right arrow
+➡ arrow | cardinal | direction | east | right arrow
+↘ arrow | direction | down-right arrow | intercardinal | southeast
+⬇ arrow | cardinal | direction | down | south
+↙ arrow | direction | down-left arrow | intercardinal | southwest
+⬅ arrow | cardinal | direction | left arrow | west
+↖ arrow | direction | intercardinal | northwest | up-left arrow
+↕ arrow | up-down arrow
+↔ arrow | left-right arrow
+↩ arrow | right arrow curving left
+↪ arrow | left arrow curving right
+⤴ arrow | right arrow curving up
+⤵ arrow | down | right arrow curving down
+🔃 arrow | clockwise | clockwise vertical arrows | reload
+⚛ atheist | atom | atom symbol
+🕉 Hindu | om | religion
+✡ David | Jew | Jewish | religion | star | star of David
+☸ Buddhist | dharma | religion | wheel | wheel of dharma
+☯ religion | tao | taoist | yang | yin
+✝ Christian | cross | latin cross | religion
+☦ Christian | cross | orthodox cross | religion
+☪ islam | Muslim | religion | star and crescent
+☮ peace | peace symbol
+♈ Aries | ram | zodiac
+♉ bull | ox | Taurus | zodiac
+♊ Gemini | twins | zodiac
+♋ Cancer | crab | zodiac
+♌ Leo | lion | zodiac
+♍ Virgo | zodiac
+♎ balance | justice | Libra | scales | zodiac
+♏ Scorpio | scorpion | scorpius | zodiac
+♐ archer | Sagittarius | zodiac
+♑ Capricorn | goat | zodiac
+♒ Aquarius | bearer | water | zodiac
+♓ fish | Pisces | zodiac
+⛎ bearer | Ophiuchus | serpent | snake | zodiac
+▶ arrow | play | play button | right | triangle
+⏩ arrow | double | fast | fast-forward button | forward
+⏭ arrow | next scene | next track | next track button | triangle
+⏯ arrow | pause | play | play or pause button | right | triangle
+◀ arrow | left | reverse | reverse button | triangle
+⏪ arrow | double | fast reverse button | rewind
+⏮ arrow | last track button | previous scene | previous track | triangle
+⏸ bar | double | pause | pause button | vertical
+⏹ square | stop | stop button
+⏺ circle | record | record button
+⏏ eject | eject button
+♀ sign | woman
+♂ sign | man
+⚕ aesculapius | medical symbol | medicine | staff
+♾ forever | infinity | unbounded | universal
+♻ recycle | recycling symbol
+⚜ fleur-de-lis
+⭕ circle | hollow red circle | large | o | red
+✅ ✓ | button | check | mark
+☑ ✓ | box | check | check box with check
+✔ ✓ | check | mark
+✖ × | cancel | multiplication | multiply | sign | x
+❌ × | cancel | cross | mark | multiplication | multiply | x
+❎ × | cross mark button | mark | square | x
+➕ + | math | plus | sign
+➖ - | − | math | minus | sign
+➗ ÷ | division | math | sign
+➰ curl | curly loop | loop
+➿ curl | double | double curly loop | loop
+✳ * | asterisk | eight-spoked asterisk
+✴ * | eight-pointed star | star
+❇ * | sparkle
+‼ ! | !! | bangbang | double exclamation mark | exclamation | mark
+⁉ ! | !? | ? | exclamation | interrobang | mark | punctuation | question
+❓ ? | mark | punctuation | question
+❔ ? | mark | outlined | punctuation | question | white question mark
+❕ ! | exclamation | mark | outlined | punctuation | white exclamation mark
+❗ ! | exclamation | mark | punctuation
+© c | copyright
+® r | registered
+™ mark | tm | trade mark | trademark
+🅰 A button | blood type
+🆎 AB button | blood type
+🅱 B button | blood type
+ℹ i | information
+Ⓜ circled M | m
+🅾 type | o | O button
+🅿 p | parking
+⚫ circle | circle | geometric
+⚪ circle | geometric | white circle
+⬛ square | geometric | square
+⬜ geometric | square | white large square
+◼ square | geometric | square
+◻ geometric | square | white medium square
+◾ square | geometric | square
+◽ geometric | square | white medium-small square
+▪ square | geometric | square
+▫ geometric | square | white small square
+🏳 	waving | white flag
