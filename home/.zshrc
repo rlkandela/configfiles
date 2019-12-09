@@ -38,6 +38,9 @@ export PATH="$PATH:/home/rlkandela/.cargo/bin"
 # Set hibernation alias
 hibernate(){
 	systemctl hibernate
+	xinput --disable "DELL08A6:00 06CB:7E92 Touchpad"
+	slock
+	xinput --enable "DELL08A6:00 06CB:7E92 Touchpad"
 }
 #alias hibernate="sudo pm-hiberate"
 # End hibernation alias
@@ -51,3 +54,7 @@ export INFOPATH"=$PATH:/opt/texlive/2019/texmf-dist/doc/info"
 # Start Matlab
 #export PATH="/usr/local/MATLAB/R2018b/bin:$PATH"
 # End Matlab
+
+# Add Local Scripts to Path
+export PATH="$PATH:/home/rlkandela/.scripts"
+# End Local Scripts to Path
