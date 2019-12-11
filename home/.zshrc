@@ -47,8 +47,8 @@ hibernate(){
 
 # Set LaTeX
 export PATH="$PATH:/opt/texlive/2019/bin/x86_64-linux"
-export MANPATH="$PATH:/opt/texlive/2019/texmf-dist/doc/man"
-export INFOPATH"=$PATH:/opt/texlive/2019/texmf-dist/doc/info"
+export MANPATH="$MANPATH:/opt/texlive/2019/texmf-dist/doc/man"
+export INFOPATH"=$INFOPATH:/opt/texlive/2019/texmf-dist/doc/info"
 # End LaTeX
 
 # Start Matlab
