@@ -138,6 +138,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'lervag/vimtex'
 Plug 'frazrepo/vim-rainbow'
 call plug#end()
+
 colorscheme onedark " Set nice looking colorscheme
 "let g:vimtex_view_method = 'zathura'
 let g:polyglot_disabled = ['latex']
@@ -153,7 +154,7 @@ let g:vimtex_quickfix_latexlog = {
 			\   'default' : 0,
 			\ },
 			\}
-set updatetime=500
+set updatetime=5000
 autocmd FileType tex autocmd CursorHold,CursorHoldI * update
 
 "let g:vimtex_compiler_latexmk = { 
