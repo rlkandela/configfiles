@@ -58,3 +58,11 @@ export INFOPATH"=$INFOPATH:/opt/texlive/2019/texmf-dist/doc/info"
 # Add Local Scripts to Path
 export PATH="$PATH:/home/rlkandela/.scripts"
 # End Local Scripts to Path
+
+# vim = nvim
+alias vim="nvim"
+# End
+
+# Set cpath = copy path to clipboard
+alias cpath="pwd | xsel -b -i"
+# End
