@@ -5,6 +5,7 @@ compton &
 # Polybar launch
 killall -q polybar
 polybar example &
+emacs --daemon
 #/home/rlkandela/.config/polybar/launch.sh
 
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -24,7 +25,8 @@ bspc config click_to_focus		  none
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Opera desktop='^2' follow=on
-bspc rule -a Spotify desktop='^5' follow=on
+#bspc rule -a "Spotify Premium" desktop='^8' follow=on
+bspc rule -a Emacs state=tiled
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
