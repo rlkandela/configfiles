@@ -66,3 +66,7 @@ alias vim="nvim"
 # Set cpath = copy path to clipboard
 alias cpath="pwd | xsel -b -i"
 # End
+
+# Add emacs.d/bin to path
+export PATH="$PATH:/home/rlkandela/.emacs.d/bin"
+# End
