@@ -2,3 +2,4 @@ st/st/st
 st/st/st.o
 st/st/x.o
 st/st/config.old.h
+config/.config/systemd/user/*.wants
