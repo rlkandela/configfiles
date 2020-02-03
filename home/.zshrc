@@ -70,3 +70,9 @@ alias cpath="pwd | xsel -b -i"
 # Add emacs.d/bin to path
 export PATH="$PATH:/home/rlkandela/.emacs.d/bin"
 # End
+
+# Add function to get wireless headphones mac
+wireless_headphones_mac(){
+	bluetoothctl devices | grep BeatsStudio | awk '{print $2}'
+}
+# End
