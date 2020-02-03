@@ -18,8 +18,8 @@ set fileencodings=ucs-bom,utf8,prc
 
 
 set softtabstop=2 " Indent by 2 spaces when hitting tab
-set shiftwidth=4 " Indent by 4 spaces when auto-indenting
-set tabstop=4 " Show existing tab with 4 spaces width
+set shiftwidth=2 " Indent by 2 spaces when auto-indenting
+set tabstop=2 " Show existing tab with 2 spaces width
 filetype on
 filetype plugin on
 filetype indent on " Enable indenting for files
