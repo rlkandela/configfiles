@@ -9,7 +9,11 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'nvie/vim-flake8'
 Plug 'lervag/vimtex'
-Plug 'frazrepo/vim-rainbow'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf'
+Plug 'mbbill/undotree'
 call plug#end()
 
 
