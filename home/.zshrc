@@ -35,6 +35,12 @@ eval "$(register-python-argcomplete rustcd)"
 export PATH="$PATH:/home/rlkandela/.cargo/bin"
 # end rustcd
 
+# Bash insulter
+if [ -f /etc/bash.command-not-found ]; then
+    . /etc/bash.command-not-found
+fi
+# End Bash Insulter
+
 # Set hibernation alias
 hibernate(){
 	systemctl hibernate
