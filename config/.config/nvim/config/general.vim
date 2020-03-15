@@ -16,6 +16,9 @@ set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
 
+set undofile
+set undodir=~/.vim/undodir
+
 
 set softtabstop=2 " Indent by 2 spaces when hitting tab
 set shiftwidth=2 " Indent by 2 spaces when auto-indenting
@@ -27,6 +30,7 @@ set autoindent " Enable auto indenting
 set nobackup " Disable backup files
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 set statusline^=%{StatusDiagnostic()}
+set statusline^=%{FugitiveStatusline()}
 set wildmenu " Display command line's tab complete options as a menu.
 set laststatus=2 "show status line
 
