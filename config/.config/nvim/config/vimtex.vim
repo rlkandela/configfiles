@@ -1,7 +1,8 @@
 let g:polyglot_disabled = ['latex']
 let g:tex_flavour = 'latex'
 let g:vimtex_view_method = 'zathura'
-set conceallevel=1
+set conceallevel=2
+let g:tex_conceal='abdgms'
 let g:vimtex_compiler_progname = 'nvr'
 let g:vimtex_quickfix_latexlog = {
 			\ 'overfull' : 0,
