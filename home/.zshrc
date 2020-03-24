@@ -82,3 +82,7 @@ wireless_headphones_mac(){
 	bluetoothctl devices | grep BeatsStudio | awk '{print $2}'
 }
 # End
+
+# Add gem to the path
+export PATH="$PATH:/home/rlkandela/.gem/ruby/2.7.0/bin"
+#
