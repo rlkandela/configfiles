@@ -14,6 +14,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf'
 Plug 'mbbill/undotree'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'PietroPate/vim-tex-conceal'
 call plug#end()
 
 
