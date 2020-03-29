@@ -6,3 +6,4 @@ config/.config/systemd/user/*.wants
 slock/slock/*.o
 slock/slock/slock
 config/.config/nvim/plugged
+local/.local/share/nvim/*
