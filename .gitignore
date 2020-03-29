@@ -1,10 +1,8 @@
 st/st/st
-st/st/st.o
-st/st/x.o
+st/st/*.o
 st/st/config.old.h
 config/.config/systemd/user/*.wants
-slock/slock/slock.o
-slock/slock/explicit_bzero.o
+slock/slock/*.o
 slock/slock/slock
 config/.config/nvim/plugged
 local/.local/share/nvim/*
