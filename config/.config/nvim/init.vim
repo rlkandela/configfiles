@@ -7,6 +7,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
+Plug 'flw-cn/vim-nerdtree-l-open-h-close'
 Plug 'jiangmiao/auto-pairs'
 Plug 'nvie/vim-flake8'
 Plug 'lervag/vimtex'
