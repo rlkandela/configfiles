@@ -6,3 +6,5 @@ slock/slock/*.o
 slock/slock/slock
 config/.config/nvim/plugged
 local/.local/share/nvim/*
+local/.local/bin
+local/.local/lib
