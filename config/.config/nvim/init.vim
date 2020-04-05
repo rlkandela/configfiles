@@ -6,6 +6,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vimwiki/vimwiki'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'nvie/vim-flake8'
 Plug 'lervag/vimtex'
