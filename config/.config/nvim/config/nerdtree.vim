@@ -12,3 +12,6 @@ vnoremap <C-s> <Esc>:NERDTreeToggle<CR>
 
 " Close when acces a file
 let NERDTreeQuitOnOpen=1
+
+" Open file with l
+let NERDTreeMapActivateNode='l'
