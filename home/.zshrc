@@ -86,3 +86,7 @@ wireless_headphones_mac(){
 # Add gem to the path
 export PATH="$PATH:/home/rlkandela/.gem/ruby/2.7.0/bin"
 #
+
+# Changed spotify by spicetify
+alias spotify="spicetify restart"
+# End

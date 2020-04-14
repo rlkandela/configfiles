@@ -137,6 +137,9 @@ super + shift + z
 	slock; \
 	xinput --enable "DELL08A6:00 06CB:7E92 Touchpad"
 
+super + shift + s
+	spicetify restart
+
 super + ctrl + o
 	/home/rlkandela/.repoconf/config/.config/sxhkd/dmenu_scripts.sh
 	#ls -l /home/rlkandela/.scripts/ | grep sh | awk '{print $9}' | dmenu -l 30 | awk '{printf "/home/rlkandela/.scripts/%s",$1}' | sh
