@@ -1,4 +1,5 @@
-let g:pandoc#biblio#sources="bcltgy"
+"let g:pandoc#biblio#sources="bcltgy"
+let g:pandoc#biblio#sources="bcgy"
 let g:pandoc#command#prefer_pdf = 1
 let g:pandoc#biblio#use_bibtool = 1
 let g:pandoc#toc#shift = 2
