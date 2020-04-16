@@ -49,24 +49,26 @@ padding-left = 0
 padding-right = 2
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-0 = DejavuSansMono:size=10;4
+font-1 = FontAwesome5Free:style=Solid:size=10;4
+font-2 = FontAwesome5Free:style=Regular:size=10;4
+font-3 = FontAwesome5Brands:style=Regular:size=10;4
+
+enable-ipc = true
 
 modules-left = bspwm
-modules-center = spotify
+modules-center = spotify previous playpause next
 modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
+;override-redirect = true
 ;wm-restack = bspwm
 ;wm-restack = i3
-
-;override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
@@ -77,13 +79,13 @@ tray-padding = 2
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/spotify]
-type = custom/script
-interval = 1
-format-prefix = " "
-format = <label>
-exec = python /usr/share/polybar/scripts/spotify_status.py -t 75 -f '{play_pause} {artist}: {song}'
-format-underline = #1db954
+;[module/spotify]
+;type = custom/script
+;interval = 1
+;format-prefix = " "
+;format = <label>
+;exec = python /usr/share/polybar/scripts/spotify_status.py -t 75 -f '{play_pause} {artist}: {song}'
+;format-underline = #1db954
 
 [module/xwindow]
 type = internal/xwindow
@@ -121,18 +123,18 @@ type = internal/bspwm
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 1
 
 label-occupied = %index%
-label-occupied-padding = 2
+label-occupied-padding = 1
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
 label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
 ; Separator in between workspaces
 ; label-separator = |
@@ -429,3 +431,52 @@ margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
+
+[module/previous]
+type = custom/script
+;interval = 86400
+format = "%{T3}<label>"
+format-padding = 2
+; Previous song icon
+exec = echo ""
+; Check if spotify is running before displaying the icon
+exec-if = "pgrep spotify"
+format-underline = #1db954
+line-size = 1
+click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+
+[module/next]
+type = custom/script
+;interval = 86400
+format = "%{T3}<label>"
+format-padding = 2
+; Next song icon
+exec = echo ""
+; Check if spotify is running before displaying the icon
+exec-if = "pgrep spotify"
+format-underline = #1db954
+line-size = 1
+click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
+[module/playpause]
+type = custom/ipc
+; Default
+hook-0 = echo ""
+; Playing
+hook-1 = echo ""
+; Paused
+hook-2 = echo ""
+initial = 1
+format-underline = #1db954
+format-padding = 2
+line-size = 1
+click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+
+[module/spotify]
+type = custom/ipc
+hook-0 = echo ""
+hook-1 = python3 ~/.config/polybar/scripts/spotify/spotify_status.py
+initial = 1
+format-padding = 3
+format-underline = #1db954
+line-size = 1

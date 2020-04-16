@@ -4,8 +4,9 @@ sxhkd &
 compton &
 # Polybar launch
 killall -q polybar
+sh /home/rlkandela/.config/polybar/scripts/spotify/launchlistener.sh&
 polybar example &
-emacs --daemon
+#emacs --daemon
 #/home/rlkandela/.config/polybar/launch.sh
 
 bspc monitor -d I II III IV V VI VII VIII IX X
