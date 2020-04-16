@@ -36,9 +36,9 @@ set laststatus=2 "show status line
 
 map <Space> <Leader>
 " Insert new line in normal mode on the top
-nmap <C-o> O<ESC>
+"nmap <C-o> O<ESC>
 " Insert new line in normal mode on the bottom
-nmap <Enter> o<ESC>
+"nmap <Enter> o<ESC>
 
 "let mapleader = ','
 set runtimepath+=,~/.config/nvim/autoload,~/.config/nvim/coc.nvim
