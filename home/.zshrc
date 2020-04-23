@@ -90,3 +90,7 @@ export PATH="$PATH:/home/rlkandela/.gem/ruby/2.7.0/bin"
 # Changed spotify by spicetify
 alias spotify="spicetify restart"
 # End
+
+# vimw open vimwiki index
+alias vimw="nvim /home/rlkandela/.vimwiki/index.md"
+# End
