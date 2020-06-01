@@ -19,6 +19,8 @@ set fileencodings=ucs-bom,utf8,prc
 set undofile
 set undodir=~/.vim/undodir
 
+" terminal
+:tnoremap <Esc> <C-\><C-n>
 
 set softtabstop=2 " Indent by 2 spaces when hitting tab
 set shiftwidth=2 " Indent by 2 spaces when auto-indenting
