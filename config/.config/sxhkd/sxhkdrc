@@ -143,6 +143,15 @@ super + shift + z
 super + shift + s
 	spicetify restart
 
+XF86AudioPlay
+	playerctl play-pause
+XF86AudioPause
+	playerctl play-pause
+XF86AudioNext
+	playerctl next
+XF86AudioPrev
+	playerctl previous
+
 super + ctrl + o
 	/home/rlkandela/.repoconf/config/.config/sxhkd/dmenu_scripts.sh
 	#ls -l /home/rlkandela/.scripts/ | grep sh | awk '{print $9}' | dmenu -l 30 | awk '{printf "/home/rlkandela/.scripts/%s",$1}' | sh
