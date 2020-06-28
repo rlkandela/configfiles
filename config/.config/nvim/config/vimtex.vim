@@ -14,3 +14,5 @@ let g:vimtex_quickfix_latexlog = {
 
 set updatetime=5000
 autocmd Filetype tex autocmd CursorHold,CursorHoldI * update
+
+nnoremap <Leader>lL :VimtexCompileSS<CR>
