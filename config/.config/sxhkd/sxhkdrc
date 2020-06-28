@@ -151,6 +151,16 @@ XF86AudioNext
 	playerctl next
 XF86AudioPrev
 	playerctl previous
+XF86MonBrightnessUp
+	xbacklight -inc 10
+XF86MonBrightnessDown
+	xbacklight -dec 10
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 super + ctrl + o
 	/home/rlkandela/.repoconf/config/.config/sxhkd/dmenu_scripts.sh
