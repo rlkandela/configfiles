@@ -16,3 +16,6 @@ set updatetime=5000
 autocmd Filetype tex autocmd CursorHold,CursorHoldI * update
 
 nnoremap <Leader>lL :VimtexCompileSS<CR>
+nnoremap <Leader>ti a\textit{}<Esc>i
+nnoremap <Leader>tb a\textbf{}<Esc>i
+nnoremap <Leader>it o\item 

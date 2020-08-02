@@ -19,6 +19,8 @@ Plug 'mbbill/undotree'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'PietroPate/vim-tex-conceal'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'alx741/vim-hindent'
 call plug#end()
 
 

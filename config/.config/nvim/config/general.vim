@@ -25,6 +25,7 @@ set undodir=~/.vim/undodir
 set softtabstop=2 " Indent by 2 spaces when hitting tab
 set shiftwidth=2 " Indent by 2 spaces when auto-indenting
 set tabstop=2 " Show existing tab with 2 spaces width
+set expandtab
 filetype on
 filetype plugin on
 filetype indent on " Enable indenting for files
@@ -37,6 +38,8 @@ set wildmenu " Display command line's tab complete options as a menu.
 set laststatus=2 "show status line
 
 map <Space> <Leader>
+" So _ is treated as space
+set iskeyword-=_
 " Insert new line in normal mode on the top
 "nmap <C-o> O<ESC>
 " Insert new line in normal mode on the bottom

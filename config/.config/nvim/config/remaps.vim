@@ -6,3 +6,4 @@ vnoremap k gk
 
 " <Leader>+ss = Set spelllang
 nnoremap <Leader>ss :set spelllang=es,en spell<CR>
+

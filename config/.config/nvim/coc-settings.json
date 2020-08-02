@@ -1,11 +1,29 @@
 {
     "languageserver": {
-        "clangd": {
+		"clangd": {
 			"command": "clangd",
 			"args": ["--background-index"],
 			"rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
 			"filetypes": ["c", "cpp", "objc", "objcpp"]
+		},
+		"haskell": {
+			"command": "haskell-language-server-wrapper",
+			"args": ["--lsp"],
+			"rootPatterns": [
+				"*.cabal",
+				"stack.yaml",
+				"cabal.project",
+				"package.yaml"
+			],
+			"filetypes": [
+				"haskell",
+				"lhaskell"
+			],
+			"initializationOptions": {
+				"languageServerHaskell": {
+				}
+			}
 		}
 	},
-	"python.linting.pylintArgs": ["--generate-members"],
+	"python.linting.pylintArgs": ["--generate-members"]
 }
