@@ -94,3 +94,7 @@ alias spotify="spicetify restart"
 # vimw open vimwiki index
 alias vimw="nvim /home/rlkandela/.vimwiki/index.md"
 # End
+
+# Aded ghcup and cabal to PATH
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+# End
