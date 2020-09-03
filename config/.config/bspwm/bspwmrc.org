@@ -1,0 +1,70 @@
+#+TITLE: Bspwm Config
+#+PROPERTY: header-args :tangle bspwmrc
+
+* CONTENTS :toc:
+- [[#first-line][FIRST LINE]]
+- [[#programs-at-startup][PROGRAMS AT STARTUP]]
+- [[#bspwm-configuration][BSPWM CONFIGURATION]]
+  - [[#desktops-settings][DESKTOPS SETTINGS]]
+  - [[#gaps][GAPS]]
+  - [[#colorscheme][COLORSCHEME]]
+  - [[#usability][USABILITY]]
+  - [[#rules][RULES]]
+
+* FIRST LINE
+The file must start with this line
+#+BEGIN_SRC shell
+#! /bin/sh
+#+END_SRC
+* PROGRAMS AT STARTUP
+The programs that will be started with ~bspwm~
+We start:
++ The daemon for the key mappings
++ The compositor
++ Kill other instances of polybar
++ Spotify listener service for the spotify integration with polybar
++ Polybar itself
++ Swallow.py script for window swallowing *REQUIRES WMUTILS & swallow.py* got it from [[https://github.com/yousufinternet/config-files/tree/master/.config/bspwm/scripts][HERE]]
+#+BEGIN_SRC shell
+sxhkd&
+compton&
+killall -q polybar
+sh /home/rlkandela/.config/polybar/scripts/spotify/launchlistener.sh&
+polybar example &
+#+END_SRC
+* BSPWM CONFIGURATION
+** DESKTOPS SETTINGS
+Setting the desktops names
+#+BEGIN_SRC shell
+bspc monitor -d I II III IV V VI VII VIII IX X
+#+END_SRC
+** GAPS
+Gaps configuration
+#+BEGIN_SRC shell
+bspc config border_width        6
+bspc config window_gap          20
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+#+END_SRC
+** COLORSCHEME
+Color settings
+#+BEGIN_SRC shell
+bspc config focused_border_color    \#E9AD79
+bspc config normal_border_color     \#79B5e9
+bspc config active_border_color     \#FFB1CE
+bspc config presel_feedback_color   \#91D1AF
+#+END_SRC
+** USABILITY
+Currently just disabling click to focus
+#+BEGIN_SRC shell
+bspc config click_to_focus          none
+#+END_SRC
+** RULES
+Some rules for the opening windows
+#+BEGIN_SRC shell
+bspc rule -a Gimp desktop='^8' follow=on
+bspc rule -a Opera desktop='^2' follow=on
+bspc rule -a Emacs state=tiled
+bspc rule -a Zathura state=tiled
+bspc rule -a TelegramDesktop desktop='^4' follow=on
+#+END_SRC
