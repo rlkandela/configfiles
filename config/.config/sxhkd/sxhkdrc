@@ -135,6 +135,9 @@ super + {Left,Down,Up,Right}
 super + @space
 	tdrop -ma -w -12 -y "$PANEL_HEIGHT" st
 
+super + {_, shift +} e
+  {emacs, emacsclient -nc}
+
 super + shift + z
 	xinput --disable "DELL08A6:00 06CB:7E92 Touchpad"; \
 	slock; \
