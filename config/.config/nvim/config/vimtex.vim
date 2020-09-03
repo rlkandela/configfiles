@@ -1,5 +1,5 @@
 let g:polyglot_disabled = ['latex']
-let g:tex_flavour = 'latex'
+let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'zathura'
 set conceallevel=2
 let g:tex_conceal='abdgms'
