@@ -8,3 +8,5 @@ config/.config/nvim/plugged
 local/.local/share/nvim/*
 local/.local/bin
 local/.local/lib
+home/.doom.d/.mypy_cache
+home/.doom.d/custom.el

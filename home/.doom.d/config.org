@@ -1,0 +1,279 @@
+#+TITLE: Doom Emacs Config
+#+PROPERTY: header-args :tangle config.el
+
+* CONTENTS :toc:
+- [[#about][ABOUT]]
+- [[#user][USER]]
+  - [[#name-and-email][NAME AND EMAIL]]
+- [[#gui][GUI]]
+  - [[#font][FONT]]
+  - [[#theme][THEME]]
+  - [[#line-numbers][LINE NUMBERS]]
+  - [[#greeting-image][GREETING IMAGE]]
+- [[#usability][USABILITY]]
+  - [[#disable-mouse][DISABLE MOUSE]]
+  - [[#autocomplete][AUTOCOMPLETE]]
+  - [[#quickhelp][QUICKHELP]]
+- [[#languages][LANGUAGES]]
+  - [[#haskell][HASKELL]]
+  - [[#cc][C/C++]]
+  - [[#python][PYTHON]]
+- [[#org][ORG]]
+  - [[#directory][DIRECTORY]]
+  - [[#org-roam][ORG-ROAM]]
+- [[#magit][MAGIT]]
+  - [[#git-push-keybinding][GIT PUSH KEYBINDING]]
+- [[#telega][TELEGA]]
+  - [[#telega-installing][TELEGA INSTALLING]]
+  - [[#telega-keybinding][TELEGA KEYBINDING]]
+  - [[#notifications][NOTIFICATIONS]]
+  - [[#emoji-completion][EMOJI COMPLETION]]
+  - [[#ignored-messages][IGNORED MESSAGES]]
+- [[#emacsclient][EMACSCLIENT]]
+  - [[#disable-workspace-creation][DISABLE WORKSPACE CREATION]]
+
+* ABOUT
+Place your private configuration here! Remember, you do not need to run ~doom sync~ after modifying this
+file!
+
+Here are some additional functions/macros that could help you configure Doom:
+- ~load!~ for loading external *.el files relative to this one
+- ~use-package!~ for configuring packages
+- ~after!~ for running code after a package has loaded
+- ~add-load-path!~ for adding directories to the ~load-path~, relative to this file.
+  Emacs searches the ~load-path~ when you load packages with ~require~ or ~use-package~.
+- ~map!~ for binding new keys
+
+To get information about any of these functions/macros, move the cursor over the highlighted symbol
+at press ~K~ (non-evil users must press ~C-c c k~).
+This will open documentation for it, including demos of how they are used.
+
+You can also try 'gd' (or ~C-c c d~) to jump to their definition and see how they are implemented.
+
+This document came with a header starting with 3 semi-colon, I will mantain it, just in case it matters.
+#+BEGIN_SRC emacs-lisp
+;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+#+END_SRC
+
+* USER
+** NAME AND EMAIL
+Some functionality uses this to identify you, e.g. GPG configuration, email clients, file templates and
+snippets.
+#+BEGIN_SRC emacs-lisp
+(setq user-full-name "Raul Candela"
+      user-mail-address "rlkandela@gmail.com")
+#+END_SRC
+
+* GUI
+** FONT
+Doom exposes five (optional) variables for controlling fonts in Doom. Here are the three important ones:
++ ~doom-font~
++ ~doom-variable-pitch-font~
++ ~doom-big-font~ -- used for ~doom-big-font-mode~ -> use this for presentations or streaming.
+
+They all accept either a font-spec, font string ("Input Mono-12"), or xlfd font string. You generally
+only need these two:
+
+#+BEGIN_SRC emacs-lisp :tangle no
+(setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
+      doom-variable-pitch-font (font-spec :family "sans" :size 13))
+#+END_SRC
+
+** THEME
+There are two ways to load a theme. Both assume the theme is installed and available. You can either set
+~doom-theme~ or manually load a theme with the ~load-theme~ function. The default is ~doom-one~
+To load a theme manualy you can either ~M-x RET load-theme~ or ~SPC h t~.
+#+BEGIN_SRC emacs-lisp
+(setq doom-theme 'doom-dracula)
+#+END_SRC
+
+** LINE NUMBERS
+This determines the style of line numbers in effect. If set to ~nil~, line numbers are disabled.
+For relative line numbers, set this to ~relative~. The default value was ~t~
+#+BEGIN_SRC emacs-lisp
+(setq display-line-numbers-type 'relative)
+#+END_SRC
+
+** GREETING IMAGE
+Change fancy icon on the startup buffer.
+I got this one from [[https://github.com/eccentric-j/doom-icon][here]].
+#+BEGIN_SRC emacs-lisp
+(setq fancy-splash-image "~/.doom.d/greeting_icon.png")
+#+END_SRC
+
+* USABILITY
+** DISABLE MOUSE
+To disable mouse clicks, all input will be from keyboard and switching window with mouse is annoying.
+*REQUIRES PACKAGE* ~disable-mouse~
+#+BEGIN_SRC emacs-lisp
+(global-disable-mouse-mode)
+#+END_SRC
+
+** AUTOCOMPLETE
+By default, autocompletion toggles with ~C-SPC~ and not automatically, to change this behaviour to autocomplete automatically after 0.2 seconds and whenever I write any letter or symbol.
+#+BEGIN_SRC emacs-lisp
+(setq company-idle-delay 0.2
+      company-minimum-prefix-length 1)
+#+END_SRC
+
+** QUICKHELP
+Floating windows that tell stuff about the selected item in the autocomplete floating window.
+*REQUIRES PACKAGE* ~company-quickhelp~
+* LANGUAGES
+** HASKELL
+Autocompletion for ~haskell~.
+*REQUIRES PACKAGE* ~hindent~ ~eglot~
+#+BEGIN_SRC emacs-lisp
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+(add-hook 'haskell-mode-hook 'haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'hindent-mode)
+(add-hook 'haskell-mode-hook 'eglot-ensure)
+
+(require 'eglot)
+(add-to-list 'eglot-server-programs '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
+#+END_SRC
+** C/C++
+Autocompletion for ~c~ and ~c++~.
+*REQUIRES PACKAGE* ~eglot~
+*REQUIRES ITEM* run ~M-x RET irony-install-server RET~ ~clangd~
+#+BEGIN_SRC emacs-lisp
+(require 'eglot)
+(add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
+(add-hook 'c-mode-hook 'eglot-ensure)
+(add-hook 'c++-mode-hook 'eglot-ensure)
+#+END_SRC
+** PYTHON
+Autocompletion for ~python~.
+*REQUIRES PACKAGE* ~eglot~ ~company-jedi~
+#+BEGIN_SRC emacs-lisp
+(defun my/python-mode-hook ()
+  (add-to-list 'company-backends 'company-jedi))
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+#+END_SRC
+* ORG
+** DIRECTORY
+If you use ~org~ and don't want your org files in the default location below, change `org-directory'.
+It must be set before org loads!
+#+BEGIN_SRC emacs-lisp
+(setq org-directory "/home/rlkandela/.orgwiki/")
+#+END_SRC
+
+** ORG-ROAM
+Org-roam is a package that lets you search backwards where an org file is referenced and also shows
+a graph of references. Pretty nice stuff.
+*REQUIRES PACKAGE* ~org-roam~ or ~(org +roam)~
+*** CONFIG
+Default config that enables org-roam-mode and sets the directory to the ~org-directory~ variable.
+#+BEGIN_SRC emacs-lisp
+(use-package org-roam
+  :ensure t
+  :hook
+  (after-init . org-roam-mode)
+  :custom
+  (org-roam-directory "/home/rlkandela/.orgwiki/"))
+#+END_SRC
+*** ORG-ROAM KEYBINDING
+Sets the key bindings for some org-roam features.
+#+BEGIN_SRC emacs-lisp
+(map! :after org-roam
+      :map org-roam-mode-map
+      :leader
+      (:prefix "n"
+       (:prefix ("r" . "Roam")
+        :desc "org-roam" "l" #'org-roam
+        :desc "Find file" "f" #'org-roam-find-file
+        :desc "Find directory" "d" #'org-roam-find-directory
+        :desc "Show graph" "g" #'org-roam-graph-show)))
+#+END_SRC
+#+BEGIN_SRC emacs-lisp
+(map! :after org-roam
+      :map org-mode-map
+      :leader
+      (:prefix "n"
+       (:prefix "r"
+        :desc "org-roam-insert" "i" #'org-roam-insert
+        :desc "org-roam-insert-immediate" "I" #'org-roam-insert-immediate)))
+#+END_SRC
+**** TODO IMPROVE DESCRIPTION OF SOME KEYBINDINGS
+* MAGIT
+** GIT PUSH KEYBINDING
+#+BEGIN_SRC emacs-lisp
+(map! :leader
+      (:prefix "g"
+       :desc "Git push" "p" #'magit-push))
+#+END_SRC
+* TELEGA
+** TELEGA INSTALLING
+For building telega in Arch at August 2020 you need to modify the *PKGBUILD* of ~telegram-tdlib~ package as follows:
++ pkgver = 1.6.6
++ source = git+https://github.com/tdlib/td
++ build = remove pkgver parameter
++ install = remove pkgver parameter
+** TELEGA KEYBINDING
+Open Telega with ~SPC o g~
+*REQUIRES PACKAGE* ~telega~
+#+BEGIN_SRC emacs-lisp
+(require 'telega)
+(map! :leader
+      (:prefix "o"
+       :desc "Telega" "l" #'telega))
+
+(require 'telega)
+(map! :after telega
+      :map telega-root-mode-map
+      :leader
+      (:prefix ("l" . "Telega")
+       :desc "Open chat with" "w" #'telega-chat-with
+       :desc "View folders" "f" #'telega-view-folders
+       :desc "Kill telega" "K" #'telega-kill
+       :desc "Browse url" "u" #'telega-browse-url))
+
+(require 'telega)
+(map! :after telega
+      :map telega-chat-mode-map
+      :leader
+      (:prefix "l"
+       :desc "Attach" "a" #'telega-chatbuf-attach
+       :desc "Cancel aux" "x" #'telega-chatbuf-cancel-aux))
+#+END_SRC
+** NOTIFICATIONS
+Enable notifications with dbus
+#+BEGIN_SRC emacs-lisp
+(telega-notifications-mode 1)
+#+END_SRC
+** EMOJI COMPLETION
+*REQUIRES PACKAGE* ~company-mode~ (comes installed with doom)
+Emoji completion with :EMOJI-NAME:
+#+BEGIN_SRC emacs-lisp
+(add-hook 'telega-chat-mode-hook
+          (lambda ()
+            (set (make-local-variable 'company-backends)
+                 (append '(telega-company-emoji
+                           telega-company-username
+                           telega-company-hashtag)
+                         (when (telega-chat-bot-p telega-chatbuf--chat)
+                           '(telega-company-botcmd))))
+            (company-mode 1)))
+#+END_SRC
+** IGNORED MESSAGES
+Ignore blocked users' messages
+#+BEGIN_SRC emacs-lisp
+(add-hook 'telega-chat-insert-message-hook 'telega-msg-ignore-blocked-sender)
+#+END_SRC
+*** BY USER ID WITHOUT BLOCK
+To ignore messages by user id but not blocking
+#+BEGIN_SRC emacs-lisp :tangle no
+(defun my-telega-ignore-12345-user (msg &rest notused)
+  (when (= (plist-get msg :sender_user_id) 12345)  ; user id number (12345 is example id)
+    (telega-msg-ignore msg)))
+
+(add-hook 'telega-chat-insert-message-hook 'my-telega-ignore-12345-user)
+#+END_SRC
+* EMACSCLIENT
+** DISABLE WORKSPACE CREATION
+Whenever you start a new emacsclient, a new workspace got created, I tried this solution to avoid that,
+but it DOES NOT WORK.
+#+BEGIN_SRC emacs-lisp :tangle no
+(after! persp-mode
+  (setq persp-emacsclient-init-frame-behaviour-override "main"))
+#+END_SRC

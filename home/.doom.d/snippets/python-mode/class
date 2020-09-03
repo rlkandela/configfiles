@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: class
+# key: cl
+# --
+class ${1:ClassName}(${2:object}):
+    """${3:Documentation for $1}
+
+    """
+    def __init__(self${4:, args}):
+        super().__init__($5)
+        $0
