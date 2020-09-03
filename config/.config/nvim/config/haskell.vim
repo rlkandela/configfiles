@@ -13,3 +13,6 @@ endfunction
 
 " 
 nnoremap <Leader>F :call CocAction('format')<CR>
+
+" Jumps to gg on write
+" let g:syntastic_auto_jump=0
