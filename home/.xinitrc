@@ -14,6 +14,6 @@ xautolock -time 10 -locker slock
 xsetroot -cursor_name left_ptr
 setxkbmap es
 xinput --enable "DELL08A6:00 06CB:7E92 Touchpad"
-sxhkd &
+#sxhkd &
 exec bspwm
 #exec i3-gaps
