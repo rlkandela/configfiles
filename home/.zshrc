@@ -98,3 +98,7 @@ alias vimw="nvim /home/rlkandela/.vimwiki/index.md"
 # Aded ghcup and cabal to PATH
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 # End
+
+# Add activate_ros
+alias activate_ros="source /opt/ros/noetic/setup.zsh"
+# End activate_ros
