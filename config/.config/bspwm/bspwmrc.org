@@ -1,5 +1,5 @@
 #+TITLE: Bspwm Config
-#+PROPERTY: header-args :tangle bspwmrc
+#+PROPERTY: header-args :tangle-mode (identity #o755) :tangle bspwmrc
 
 * CONTENTS :toc:
 - [[#first-line][FIRST LINE]]
