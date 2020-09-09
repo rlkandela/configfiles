@@ -1,0 +1,6 @@
+# key: op
+# name: open
+# --
+with open(${1:"path/to/the/file"},"${2:mode}") as ${3:f}:
+     $4
+$0

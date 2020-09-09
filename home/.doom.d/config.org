@@ -20,6 +20,7 @@
   - [[#python][PYTHON]]
 - [[#org][ORG]]
   - [[#directory][DIRECTORY]]
+  - [[#org-config][ORG CONFIG]]
   - [[#org-roam][ORG-ROAM]]
 - [[#magit][MAGIT]]
   - [[#git-push-keybinding][GIT PUSH KEYBINDING]]
@@ -119,6 +120,9 @@ By default, autocompletion toggles with ~C-SPC~ and not automatically, to change
 ** QUICKHELP
 Floating windows that tell stuff about the selected item in the autocomplete floating window.
 *REQUIRES PACKAGE* ~company-quickhelp~
+#+BEGIN_SRC emacs-lisp
+(company-quickhelp-mode)
+#+END_SRC
 * LANGUAGES
 ** HASKELL
 Autocompletion for ~haskell~.
@@ -127,11 +131,38 @@ Autocompletion for ~haskell~.
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'hindent-mode)
+#+END_SRC
+Eglot working
+#+BEGIN_SRC emacs-lisp :tangle no
 (add-hook 'haskell-mode-hook 'eglot-ensure)
 
 (require 'eglot)
 (add-to-list 'eglot-server-programs '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
 #+END_SRC
+Company va bastante guay con ~company-ghci~. Puede que sea porque no se como va LSP todavía.
+Pros:
++ No uso ~eglot~, si lo quito en C lo puedo desinstalar.
++ Me fuerza a usar ~ghci~ (si no no autocompleta), lo cual esta guay, porque debería de usarlo más.
++ La descripcion del quickhelp está bastante guay (no se si la tengo con ~eglot~ y ~dante~)
+
+Contras:
+- Tengo que tener la base de hoogle local (~hoogle generate~).
+- No me dice los tipos en el autocompletdo, solo en el quickhelp-popup
+#+BEGIN_SRC emacs-lisp
+(require 'company)
+(after! haskell
+  (set-company-backend! 'haskell-mode 'company-ghci 'company-files 'company-yasnippet))
+#+END_SRC
+LSP (no se configurarlo, o está mal hecho)
+#+BEGIN_SRC emacs-lisp :tangle no
+(add-hook 'haskell-mode-hook 'lsp-mode)
+(use-package lsp-haskell
+  :ensure t
+  :config
+  (setq lsp-haskell-process-path-hie "haskell-language-server-wrapper"))
+#+END_SRC
+*** TODO PASAR A INGLES
+SCHEDULED: <2021-03-09 mar>
 ** C/C++
 Autocompletion for ~c~ and ~c++~.
 *REQUIRES PACKAGE* ~eglot~
@@ -146,9 +177,14 @@ Autocompletion for ~c~ and ~c++~.
 Autocompletion for ~python~.
 *REQUIRES PACKAGE* ~eglot~ ~company-jedi~
 #+BEGIN_SRC emacs-lisp
-(defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi))
-(add-hook 'python-mode-hook 'my/python-mode-hook)
+(require 'company)
+(require 'company-jedi)
+(require 'yasnippet)
+(after! python
+  (set-company-backend! 'python-mode 'company-jedi 'company-files 'company-yasnippet))
+;; (defun my/python-mode-hook ()
+;;   (add-to-list 'company-backends 'company-jedi))
+;; (add-hook 'python-mode-hook 'my/python-mode-hook)
 #+END_SRC
 * ORG
 ** DIRECTORY
@@ -157,7 +193,14 @@ It must be set before org loads!
 #+BEGIN_SRC emacs-lisp
 (setq org-directory "/home/rlkandela/.orgwiki/")
 #+END_SRC
-
+** ORG CONFIG
+*** CLOSING ITEMS
+To show timestamp on ~DONE~
+#+BEGIN_SRC emacs-lisp
+(setq org-log-done 'time)
+#+END_SRC
+**** DONE PRUEBA
+CLOSED: [2020-09-09 mié 02:04]
 ** ORG-ROAM
 Org-roam is a package that lets you search backwards where an org file is referenced and also shows
 a graph of references. Pretty nice stuff.

@@ -14,24 +14,33 @@
 (setq company-idle-delay 0.2
       company-minimum-prefix-length 1)
 
+(company-quickhelp-mode)
+
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'hindent-mode)
-(add-hook 'haskell-mode-hook 'eglot-ensure)
 
-(require 'eglot)
-(add-to-list 'eglot-server-programs '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
+(require 'company)
+(after! haskell
+  (set-company-backend! 'haskell-mode 'company-ghci 'company-files 'company-yasnippet))
 
 (require 'eglot)
 (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
 (add-hook 'c-mode-hook 'eglot-ensure)
 (add-hook 'c++-mode-hook 'eglot-ensure)
 
-(defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi))
-(add-hook 'python-mode-hook 'my/python-mode-hook)
+(require 'company)
+(require 'company-jedi)
+(require 'yasnippet)
+(after! python
+  (set-company-backend! 'python-mode 'company-jedi 'company-files 'company-yasnippet))
+;; (defun my/python-mode-hook ()
+;;   (add-to-list 'company-backends 'company-jedi))
+;; (add-hook 'python-mode-hook 'my/python-mode-hook)
 
 (setq org-directory "/home/rlkandela/.orgwiki/")
+
+(setq org-log-done 'time)
 
 (use-package org-roam
   :ensure t
