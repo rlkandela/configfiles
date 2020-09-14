@@ -42,6 +42,25 @@
 
 (setq org-log-done 'time)
 
+(global-set-key (kbd "C-x C-f")  (lambda () (interactive)
+                                     (cd "somePathHere")
+                                     (call-interactively 'find-file)))
+(map! :leader
+      :prefix "f"
+      :desc "Open orgwiki in dired" "o" (lambda () (interactive)
+                                          (cd "/home/rlkandela/.orgwiki")
+                                          (call-interactively 'find-file)))
+
+(after! org
+  (setq org-priority-faces '((65 :foreground "#f73131") (66 :foreground "#31f73b") (67 :foreground "#4287f5"))))
+
+(use-package! org-fancy-priorities
+  :hook (org-mode . org-fancy-priorities-mode)
+  :config (setq org-fancy-priorities-list '("■" "■" "■")))
+
+(map! "C-M-k" #'org-shiftup)
+(map! "C-M-j" #'org-shiftdown)
+
 (use-package org-roam
   :ensure t
   :hook

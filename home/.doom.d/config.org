@@ -201,6 +201,34 @@ To show timestamp on ~DONE~
 #+END_SRC
 **** DONE PRUEBA
 CLOSED: [2020-09-09 mié 02:04]
+*** OPEN ORGWIKI
+Keymap to open dired at orgwiki
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-x C-f")  (lambda () (interactive)
+                                     (cd "somePathHere")
+                                     (call-interactively 'find-file)))
+(map! :leader
+      :prefix "f"
+      :desc "Open orgwiki in dired" "o" (lambda () (interactive)
+                                          (cd "/home/rlkandela/.orgwiki")
+                                          (call-interactively 'find-file)))
+#+END_SRC
+*** ORG-PRIORITIES
+Some priorities configuration, like colours and fancy priorities characters
+#+BEGIN_SRC emacs-lisp
+(after! org
+  (setq org-priority-faces '((65 :foreground "#f73131") (66 :foreground "#31f73b") (67 :foreground "#4287f5"))))
+
+(use-package! org-fancy-priorities
+  :hook (org-mode . org-fancy-priorities-mode)
+  :config (setq org-fancy-priorities-list '("■" "■" "■")))
+
+(map! "C-M-k" #'org-shiftup)
+(map! "C-M-j" #'org-shiftdown)
+#+END_SRC
+**** TODO [#C] PRUEBA_LOW
+**** TODO [#B] PRUEBA_MID
+**** TODO [#A] PRUEBA_HIGH
 ** ORG-ROAM
 Org-roam is a package that lets you search backwards where an org file is referenced and also shows
 a graph of references. Pretty nice stuff.
