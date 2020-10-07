@@ -1,4 +1,6 @@
 
+# Export TZ for emacs telega.el
+TZ='Europe/Madrid'; export TZ
 
 # FIN
 
