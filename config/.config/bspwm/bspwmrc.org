@@ -31,6 +31,7 @@ compton&
 killall -q polybar
 sh /home/rlkandela/.config/polybar/scripts/spotify/launchlistener.sh&
 polybar example &
+./swallow.py &
 #+END_SRC
 * BSPWM CONFIGURATION
 ** DESKTOPS SETTINGS
@@ -41,6 +42,7 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 ** GAPS
 Gaps configuration
 #+BEGIN_SRC shell
+bspc config split_ratio         0.5
 bspc config border_width        6
 bspc config window_gap          20
 bspc config borderless_monocle   true
